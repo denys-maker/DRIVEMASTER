@@ -1,0 +1,286 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIVEMASTER | Официальная помощь в получении прав</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-bg: #121212;
+            --secondary-bg: #1e1e1e;
+            --accent-color: #ff3e3e; 
+            --text-light: #ffffff;
+            --text-gray: #b0b0b0;
+            --card-bg: #252525;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', 'Segoe UI', sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--primary-bg); color: var(--text-light); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Навигация */
+        header { 
+            background: rgba(18, 18, 18, 0.95); 
+            padding: 15px 0; 
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            z-index: 1000; 
+            border-bottom: 1px solid #333;
+            backdrop-filter: blur(10px);
+        }
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 900; color: var(--text-light); text-decoration: none; text-transform: uppercase; }
+        .logo span { color: var(--accent-color); }
+        
+        nav ul { display: flex; list-style: none; gap: 25px; }
+        nav ul li a { color: var(--text-gray); text-decoration: none; font-size: 14px; font-weight: 600; transition: 0.3s; text-transform: uppercase; }
+        nav ul li a:hover { color: var(--accent-color); }
+
+        /* Главный баннер */
+        .hero { 
+            height: 80vh; 
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center;
+            display: flex; align-items: center; justify-content: center; text-align: center;
+            padding-top: 80px;
+        }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; line-height: 1.2; text-transform: uppercase; }
+        .hero p { font-size: 18px; color: var(--text-gray); margin-bottom: 30px; max-width: 800px; }
+
+        /* Секция О НАС */
+Markup
+
+
+        .about { padding: 80px 0; background: var(--secondary-bg); }
+        .about-content { max-width: 900px; margin: 0 auto; text-align: justify; }
+        .about h2 { text-align: center; margin-bottom: 40px; color: var(--accent-color); font-size: 32px; text-transform: uppercase; }
+        .about p { margin-bottom: 20px; color: #d1d1d1; font-size: 16px; }
+        .highlight-box { border-left: 4px solid var(--accent-color); padding-left: 20px; margin: 30px 0; background: #252525; padding: 20px; border-radius: 0 10px 10px 0; }
+
+        /* Цены и Категории */
+        .prices { padding: 80px 0; }
+        .section-head { text-align: center; margin-bottom: 50px; }
+        .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .price-card { background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #333; transition: 0.3s; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
+        .price-card:hover { border-color: var(--accent-color); transform: translateY(-5px); }
+        .price-card h3 { font-size: 26px; margin-bottom: 5px; color: var(--accent-color); }
+        .price-card .age { font-size: 13px; color: #888; margin-bottom: 15px; font-style: italic; }
+        .price-card .cost { font-size: 34px; font-weight: 800; margin: 15px 0; }
+        .price-card ul { list-style: none; margin-bottom: 20px; }
+        .price-card ul li { font-size: 14px; margin-bottom: 10px; color: #bbb; display: flex; align-items: center; }
+        .price-card ul li i { color: #00ff00; margin-right: 10px; font-size: 12px; }
+
+        /* Форма */
+        .contact { padding: 100px 0; background: #111; }
+        .form-wrap { max-width: 550px; margin: 0 auto; background: var(--card-bg); padding: 50px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+        input, select { width: 100%; padding: 16px; margin-bottom: 20px; background: #181818; border: 1px solid #444; color: white; border-radius: 8px; font-size: 16px; outline: none; }
+        input:focus { border-color: var(--accent-color); }
+        
+        /* КНОПКА ОТПРАВИТЬ */
+        .btn-submit { 
+            width: 100%; 
+            background: linear-gradient(45deg, #ff3e3e, #b30000); 
+            color: white; 
+Markup
+
+
+            padding: 20px; 
+            border: none; 
+            font-weight: 800; 
+            cursor: pointer; 
+            border-radius: 8px; 
+            font-size: 18px; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 5px 15px rgba(255, 62, 62, 0.4);
+            transition: 0.4s;
+        }
+        .btn-submit:hover { 
+            transform: scale(1.02); 
+            box-shadow: 0 8px 25px rgba(255, 62, 62, 0.6);
+            background: linear-gradient(45deg, #ff5e5e, #e60000);
+        }
+
+        footer { padding: 40px 0; border-top: 1px solid #333; text-align: center; color: #555; font-size: 13px; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 30px; }
+            .form-wrap { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-flex">
+        <a href="#" class="logo">DRIVE<span>MASTER</span></a>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#prices">Категории и Цены</a></li>
+                <li><a href="#contact">Заказать</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <div class="container">
+        <h1>Быстрое и удобное оформление <br> водительских удостоверений</h1>
+        <p>Без визита в офис, без очередей. Официальные бла
+нки, регистрация в базах ГИБДД, доставка по всей России.</p>
+        <a href="#contact" class="btn-submit" style="display:inline-block; width:auto; padding: 15px 40px; text-decoration:none;">Оформить права</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container about-content">
+        <h2>О компании</h2>
+        <p>Наша компания оказывает услуги по оформлению водительских удостоверений категорий «A», «B» и «C». Мы обеспечиваем высокое качество подготовки документов и осуществляем доставку по всей территории России.</p>
+        
+        <p>Процесс оформления проходит с полным соблюдением конфиденциальности. Клиенты могут не беспокоиться о сохранности персональных данных и при необходимости без опасений предъявлять удостоверение сотрудникам ГИБДД. Мы работаем исключительно с официальными документами, выданными уполномоченными органами и оформленными на оригинальных бланках с индивидуальными серийными номерами, зарегистрированными в соответствующих базах. Благодаря полному соответствию установленным требованиям и стандартам у вас не возникнет лишних вопросов. Обратившись к нам, вы сможете получить водительское удостоверение быстро и без сложностей.</p>
+        
+        <div class="highlight-box">
+            <p><strong>Важно:</strong> Весь процесс проходит дистанционно. Достаточно заполнить электронную форму, указать паспортные данные, выбрать нужные категории и загрузить цифровую фотографию.</p>
+        </div>
+
+        <p>Оставьте заявку через форму на сайте, и наши специалисты свяжутся с вами в максимально короткие сроки. Мы подробно проконсультируем вас по всем интересующим вопросам и предоставим всю необходимую информацию.</p>
+        
+        <p>Доставка осуществляется в согласованное с менеджером время, а курьеры оперативно привезут удостоверение по указанному адресу. Мы делаем всё возможное для вашего комфорта.</p>
+    </div>
+</section>
+
+<section id="prices" class="prices">
+    <div class="container">
+        <div class="section-head">
+            <h2>Стоимость и Категории</h2>
+        </div>
+        <div class="price-grid">
+            <!-- Категория М -->
+            <div class="price-card">
+                <div>
+                    <h3>Категория М</h3>
+                    <p class="age">Возможно оформление с 16 лет</p>
+                    <div class="cost">25 000 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Мопеды и легкие квадрициклы</li>
+                        <li><i class="fas fa-check"></i> Дистанционное оформление</li>
+                        <li><i class="fas fa-check"></i> Регистрация в базе ГИБДД</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-submit" style="font-size:12px; padding:10px; text-decoration:none; text-align:center;">Выбрать</a>
+            </div>
+
+            <!-- Категория А1 -->
+            <div class="price-card">
+                <div>
+                    <h3>Категория А1</h3>
+                    <p class="age">Возможно оформление с 16 лет</p>
+                    <div class="cost">28 000 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Легкие мотоциклы (до 125 см³)</li>
+                        <li><i class="fas fa-check"></i> Срок от 10 дней</li>
+                        <li><i class="fas fa-check"></i> Официальный бланк</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-submit" style="font-size:12px; padding:10px; text-decoration:none; text-align:center;">Выбрать</a>
+            </div>
+
+            <!-- Категория А -->
+            <div class="price-card">
+                <div>
+                    <h3>Категория А</h3>
+                    <p class="age">С 18 лет</p>
+                    <div class="cost"
+>30 000 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Любые мотоциклы</li>
+                        <li><i class="fas fa-check"></i> Доставка курьером</li>
+                        <li><i class="fas fa-check"></i> Полная конфиденциальность</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-submit" style="font-size:12px; padding:10px; text-decoration:none; text-align:center;">Выбрать</a>
+            </div>
+
+            <!-- Категория B -->
+            <div class="price-card" style="border-color: var(--accent-color); transform: scale(1.05);">
+                <div>
+                    <h3 style="color: white;">Категория B</h3>
+                    <p class="age">Самый частый выбор</p>
+                    <div class="cost">35 000 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Легковые автомобили</li>
+                        <li><i class="fas fa-check"></i> Любой регион РФ</li>
+                        <li><i class="fas fa-check"></i> Оригинальные серийные номера</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-submit" style="font-size:12px; padding:10px; text-decoration:none; text-align:center;">Выбрать</a>
+            </div>
+
+            <!-- Категория C -->
+            <div class="price-card">
+                <div>
+                    <h3>Категория C</h3>
+                    <p class="age">Грузовые автомобили</p>
+                    <div class="cost">45 000 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Машины весом > 3.5 тонн</li>
+                        <li><i class="fas fa-check"></i> Проверка по базам</li>
+                        <li><i class="fas fa-check"></i> Срок изготовления до 2 недель</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-submit" style="font-size:12px; padding:10px; text-decoration:none; text-align:center;">Выбрать</a>
+            </div>
+
+            <!-- Категория D -->
+            <div class="price-card">
+                <div>
+                    <h3>Категория D</h3>
+                    <p class="age">Пассажирские перевозки</p>
+                    <div class="cost">60 000 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Автобусы и спецтранспорт</li>
+                        <li><i class="fas fa-check"></i> Под ключ</li>
+                        <li><i class="fas fa-check"></i> Гарантия прохождения проверок</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-submit" style="font-size:12px; padding:10px; text-decoration:none; text-align:center;">Выбрать</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="form-wrap">
+            <h2 style="margin-bottom: 30px; text-align: center; color: var(--accent-color);">Оставить заявку</h2>
+            <!-- ЗАМЕНИ ССЫЛКУ НИЖЕ НА ТУ, ЧТО ДАСТ FORMSPREE -->
+            <form action="https://formspree.io/f/mbddjbln" method="POST">
+                <input type="text" name="name" placeholder="Ваше ФИО" required>
+                <input type="text" name="contact" placeholder="Ваш Telegram / WhatsApp / Телефон" required>
+                <select name="category" required>
+                    <option value="">Выберите категорию</option>
+                    <option value="M">Категория М — 25 000 ₽</option>
+                    <option value="A1">Категория А1 — 28 000 ₽</option>
+                    <option value="A">Категория А — 30 000 ₽</option>
+<option value="B">Категория B — 35 000 ₽</option>
+                    <option value="C">Категория C — 45 000 ₽</option>
+                    <option value="D">Категория D — 60 000 ₽</option>
+                </select>
+                <button type="submit" class="btn-submit">Отправить заявку менеджеру</button>
+            </form>
+            <p style="font-size:11px; color:#555; margin-top:20px; text-align: center;">Отправляя форму, вы подтверждаете согласие на обработку данных.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>DRIVEMASTER &copy; 2026 | Официальная помощь в получении автодокументов в РФ.</p>
+    </div>
+</footer>
+
+</body>
+</html>
